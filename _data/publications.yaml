@@ -12,13 +12,13 @@ papers:
     paper_pdf: "https://link.springer.com/article/10.1007/s10654-025-01297-8"
     selected: y
     
-  - title: "Ultra-Processed Food Intake and Risk of Type 2 Diabetes Mellitus: A Dose-Response Meta-Analysis of Prospective Studies"
+  - title: "Ultra-Processed Food Intake and Risk of Type 2 Diabetes Mellitus: <br>A Dose-Response Meta-Analysis of Prospective Studies"
     authors: "Yujin Kim, <b><u>Yoonkyoung Cho</u></b>, Jin Eui Kim, Dong Hoon Lee, Hannah Oh"
     venue: "Diabetes & Metabolism Journal"
     paper_pdf: "https://www.e-dmj.org/journal/view.php?number=2971"
     selected: y
   
-  - title: "Recreational screen time and obesity risk in Korean children: a 3-year prospective cohort study"
+  - title: "Recreational screen time and obesity risk in Korean children: <br>a 3-year prospective cohort study"
     year: "2024"
     authors: "Hajin Jang*, <b><u>Yoonkyoung Cho</u></b>*, Hannah Oh (*co-first author)"
     venue: "International Journal of Behavioral Nutrition and Physical Activity"
@@ -39,7 +39,7 @@ papers:
     paper_pdf: "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-15969-1"
     selected: y
     
-  - title: "Early-life body fatness in relation to breast, endometrial, and ovarian cancers: a dose-response meta-analysis of prospective studies"
+  - title: "Early-life body fatness in relation to breast, endometrial, and ovarian cancers: <br>a dose-response meta-analysis of prospective studies"
     year: "2022"
     authors: "Dohyun Byun, SungEun Hong, Seaun Ryu, Yeonju Nam, Hajin Jang, <b><u>Yoonkyoung Cho</u></b>, NaNa Keum, Hannah Oh"
     venue: "British Journal of Cancer"
@@ -47,7 +47,7 @@ papers:
     selected: y
 
 oral_presentations:
-  - title: "Ultra-processed food intake and type 2 diabetes: a pooled analysis of 3 population-based prospective cohorts"
+  - title: "Ultra-processed food intake and type 2 diabetes: a pooled analysis of <br>3 population-based prospective cohorts"
     authors: "<b><u>Yoonkyoung Cho</u></b>, Hannah Oh (2023)"
     venue: "Korean Nutrition Society"
     selected: y
