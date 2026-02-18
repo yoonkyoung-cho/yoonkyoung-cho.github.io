@@ -331,7 +331,7 @@ a:hover {
 .paper-title-compact {
   font-weight: 500;
   color: #1a1a2e;
-  flex: 7 1 0%;
+  flex: 7.5 1 0%;
   min-width: 0;
   margin-right: 15px;
 }
@@ -339,12 +339,9 @@ a:hover {
 .paper-venue-compact {
   font-size: 13px;
   color: #64748b;
-  flex: 3 1 0%;
+  flex: 2.5 1 0%;
   min-width: 0;
   text-align: right;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /* Publication subsection headings — match .docs-section h5 */
