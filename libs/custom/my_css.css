@@ -331,26 +331,28 @@ a:hover {
 .paper-title-compact {
   font-weight: 500;
   color: #1a1a2e;
-  flex: 7;
-  min-width: 0;
+  width: 70%;
+  flex: 0 0 70%;
   margin-right: 15px;
 }
 
 .paper-venue-compact {
   font-size: 13px;
   color: #64748b;
-  flex: 3;
+  width: 30%;
+  flex: 0 0 30%;
   text-align: right;
-  white-space: nowrap;
 }
 
-/* Publication subsection headings */
+/* Publication subsection headings — match .docs-section h5 */
 .pub-subsection {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #00274C;
+  color: #1a1a2e;
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .paper-details {
