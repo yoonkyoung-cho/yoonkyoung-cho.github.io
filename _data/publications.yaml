@@ -45,8 +45,8 @@ papers:
     paper_pdf: "https://www.nature.com/articles/s41416-021-01625-1"
     selected: y
 
+Oral Presentations:
   - title: "Ultra-processed food intake and type 2 diabetes: a pooled analysis of 3 population-based prospective cohorts"
-    year: "Oral Presentations"
     authors: "<b><u>Yoonkyoung Cho</u></b>, Hannah Oh"
     venue: "KNS Annual Conference 2023 (Korean Nutrition Society)"
     selected: y
@@ -61,9 +61,9 @@ papers:
     authors: "<b><u>Yoonkyoung Cho</u></b>, Hannah Oh"
     venue: "5th APCMS Congress (Korean Society of Cardiometabolic Syndrome)"
     selected: y
-    
+
+Poster Presentations:
   - title: "Television, Computer, Smartphone Use, and Obesity Risk: A 3-Year Follow-Up Study"
-    year: "Poster Presentations"
     authors: "<b><u>Yoonkyoung Cho</u></b>, Hajin Jang, Hannah Oh"
     venue: "NUTRITION 2023 (American Society for Nutrition)"
     paper_pdf: "https://www.sciencedirect.com/science/article/pii/S2475299123263507?via%3Dihub"
