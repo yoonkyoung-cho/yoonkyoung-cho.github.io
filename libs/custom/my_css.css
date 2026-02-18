@@ -331,17 +331,20 @@ a:hover {
 .paper-title-compact {
   font-weight: 500;
   color: #1a1a2e;
-  width: 70%;
-  flex: 0 0 70%;
+  flex: 7 1 0%;
+  min-width: 0;
   margin-right: 15px;
 }
 
 .paper-venue-compact {
   font-size: 13px;
   color: #64748b;
-  width: 30%;
-  flex: 0 0 30%;
+  flex: 3 1 0%;
+  min-width: 0;
   text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Publication subsection headings — match .docs-section h5 */
