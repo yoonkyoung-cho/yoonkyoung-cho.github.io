@@ -57,47 +57,93 @@ layout: default
 <div class="docs-section" id="publications">
   <h5>Publications</h5>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper-compact">
-          {% if paper.year %}
-            <p class="year-header"><b>{{ paper.year }}</b></p>
+  <!-- Papers -->
+  <h6 class="pub-subsection">Papers</h6>
+  {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+  {% for paper in selected_papers %}
+    <div class="paper-compact">
+      {% if paper.year %}
+        <p class="year-header"><b>{{ paper.year }}</b></p>
+      {% endif %}
+      <div class="paper-row" onclick="togglePaper(this)">
+        <span class="paper-toggle">&#9654;</span>
+        <span class="paper-title-compact">{{ paper.title }}</span>
+        <span class="paper-venue-compact">{{ paper.venue }}</span>
+      </div>
+      <div class="paper-details">
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <div class="paper-buttons">
+          {% if paper.paper_pdf %}
+            <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
           {% endif %}
-          <div class="paper-row" onclick="togglePaper(this)">
-            <span class="paper-toggle">&#9654;</span>
-            <span class="paper-title-compact">{{ paper.title }}</span>
-            <span class="paper-venue-compact">{{ paper.venue }}</span>
-          </div>
-          <div class="paper-details">
-            <p class="paper-authors">{{ paper.authors }}</p>
-            <div class="paper-buttons">
-              {% if paper.paper_pdf %}
-                <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
-              {% endif %}
-              {% if paper.poster %}
-                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-              {% endif %}
-              {% if paper.code %}
-                <a class="button code-btn" href="{{ paper.code }}" target="_blank" data-repo="{{ paper.code }}">Code</a>
-              {% endif %}
-              {% if paper.video %}
-                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-              {% endif %}
-              {% if paper.slides %}
-                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-              {% endif %}
-              {% if paper.twitter %}
-                <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
-              {% endif %}
-            </div>
-          </div>
+          {% if paper.poster %}
+            <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+          {% endif %}
+          {% if paper.code %}
+            <a class="button code-btn" href="{{ paper.code }}" target="_blank" data-repo="{{ paper.code }}">Code</a>
+          {% endif %}
+          {% if paper.video %}
+            <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+          {% endif %}
+          {% if paper.slides %}
+            <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+          {% endif %}
+          {% if paper.twitter %}
+            <a class="button" href="{{ paper.twitter }}" target="_blank">Twitter</a>
+          {% endif %}
         </div>
-      {% endfor %}
-      <h6><b><i>( * indicates equal contribution )</i></b></h6>
+      </div>
     </div>
-  </div>
+  {% endfor %}
+  <h6><b><i>( * indicates equal contribution )</i></b></h6>
+
+  <!-- Oral Presentations -->
+  <h6 class="pub-subsection">Oral Presentations</h6>
+  {% assign selected_orals = site.data.publications.oral_presentations | where: "selected", "y" %}
+  {% for paper in selected_orals %}
+    <div class="paper-compact">
+      {% if paper.year %}
+        <p class="year-header"><b>{{ paper.year }}</b></p>
+      {% endif %}
+      <div class="paper-row" onclick="togglePaper(this)">
+        <span class="paper-toggle">&#9654;</span>
+        <span class="paper-title-compact">{{ paper.title }}</span>
+        <span class="paper-venue-compact">{{ paper.venue }}</span>
+      </div>
+      <div class="paper-details">
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <div class="paper-buttons">
+          {% if paper.paper_pdf %}
+            <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- Poster Presentations -->
+  <h6 class="pub-subsection">Poster Presentations</h6>
+  {% assign selected_posters = site.data.publications.poster_presentations | where: "selected", "y" %}
+  {% for paper in selected_posters %}
+    <div class="paper-compact">
+      {% if paper.year %}
+        <p class="year-header"><b>{{ paper.year }}</b></p>
+      {% endif %}
+      <div class="paper-row" onclick="togglePaper(this)">
+        <span class="paper-toggle">&#9654;</span>
+        <span class="paper-title-compact">{{ paper.title }}</span>
+        <span class="paper-venue-compact">{{ paper.venue }}</span>
+      </div>
+      <div class="paper-details">
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <div class="paper-buttons">
+          {% if paper.paper_pdf %}
+            <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 <!-- ========== RESUME ========== -->

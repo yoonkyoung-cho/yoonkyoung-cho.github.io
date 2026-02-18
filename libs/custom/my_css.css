@@ -331,14 +331,26 @@ a:hover {
 .paper-title-compact {
   font-weight: 500;
   color: #1a1a2e;
-  flex: 1;
+  flex: 7;
+  min-width: 0;
   margin-right: 15px;
 }
 
 .paper-venue-compact {
   font-size: 13px;
   color: #64748b;
+  flex: 3;
+  text-align: right;
   white-space: nowrap;
+}
+
+/* Publication subsection headings */
+.pub-subsection {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00274C;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .paper-details {
