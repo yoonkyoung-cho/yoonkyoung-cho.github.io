@@ -305,7 +305,7 @@ a:hover {
 
 .paper-row {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 10px 12px;
   cursor: pointer;
   border-radius: 6px;
@@ -342,6 +342,9 @@ a:hover {
   flex: 2.5 1 0%;
   min-width: 0;
   text-align: right;
+  display: inline-block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Publication subsection headings — match .docs-section h5 */
