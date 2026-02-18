@@ -347,6 +347,14 @@ a:hover {
   overflow-wrap: break-word;
 }
 
+.wide-venue .paper-title-compact {
+  flex: 6.5 1 0%;
+}
+
+.wide-venue .paper-venue-compact {
+  flex: 3.5 1 0%;
+}
+
 /* Publication subsection headings — match .docs-section h5 */
 .pub-subsection {
   font-size: 1.4rem;

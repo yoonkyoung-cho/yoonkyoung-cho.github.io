@@ -23,6 +23,7 @@ papers:
     authors: "Hajin Jang*, <b><u>Yoonkyoung Cho</u></b>*, Hannah Oh (*co-first author)"
     venue: "International Journal of Behavioral Nutrition and Physical Activity"
     paper_pdf: "https://link.springer.com/article/10.1186/s12966-024-01660-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240930&utm_content=10.1186%2Fs12966-024-01660-0"
+    wide_venue: y
     selected: y
   
   - title: "Ultra-processed food intake and risk of type 2 diabetes in Korean adults"

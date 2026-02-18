@@ -62,7 +62,7 @@ layout: default
       {% if paper.year %}
         <p class="year-header"><b>{{ paper.year }}</b></p>
       {% endif %}
-      <div class="paper-row" onclick="togglePaper(this)">
+      <div class="paper-row{% if paper.wide_venue == 'y' %} wide-venue{% endif %}" onclick="togglePaper(this)">
         <span class="paper-toggle">&#9654;</span>
         <span class="paper-title-compact">{{ paper.title }}</span>
         <span class="paper-venue-compact">{{ paper.venue }}</span>
@@ -104,7 +104,7 @@ layout: default
       {% if paper.year %}
         <p class="year-header"><b>{{ paper.year }}</b></p>
       {% endif %}
-      <div class="paper-row" onclick="togglePaper(this)">
+      <div class="paper-row{% if paper.wide_venue == 'y' %} wide-venue{% endif %}" onclick="togglePaper(this)">
         <span class="paper-toggle">&#9654;</span>
         <span class="paper-title-compact">{{ paper.title }}</span>
         <span class="paper-venue-compact">{{ paper.venue }}</span>
@@ -130,7 +130,7 @@ layout: default
       {% if paper.year %}
         <p class="year-header"><b>{{ paper.year }}</b></p>
       {% endif %}
-      <div class="paper-row" onclick="togglePaper(this)">
+      <div class="paper-row{% if paper.wide_venue == 'y' %} wide-venue{% endif %}" onclick="togglePaper(this)">
         <span class="paper-toggle">&#9654;</span>
         <span class="paper-title-compact">{{ paper.title }}</span>
         <span class="paper-venue-compact">{{ paper.venue }}</span>
