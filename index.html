@@ -56,9 +56,6 @@ layout: default
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h5>Publications</h5>
-
-  <!-- Papers -->
-  <h6 class="pub-subsection">Papers</h6>
   {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
   {% for paper in selected_papers %}
     <div class="paper-compact">
@@ -96,9 +93,11 @@ layout: default
     </div>
   {% endfor %}
   <h6><b><i>( * indicates equal contribution )</i></b></h6>
+</div>
 
-  <!-- Oral Presentations -->
-  <h6 class="pub-subsection">Oral Presentations</h6>
+<!-- ========== ORAL PRESENTATIONS ========== -->
+<div class="docs-section" id="oral-presentations">
+  <h5>Oral Presentations</h5>
   {% assign selected_orals = site.data.publications.oral_presentations | where: "selected", "y" %}
   {% for paper in selected_orals %}
     <div class="paper-compact">
@@ -120,9 +119,11 @@ layout: default
       </div>
     </div>
   {% endfor %}
+</div>
 
-  <!-- Poster Presentations -->
-  <h6 class="pub-subsection">Poster Presentations</h6>
+<!-- ========== POSTER PRESENTATIONS ========== -->
+<div class="docs-section" id="poster-presentations">
+  <h5>Poster Presentations</h5>
   {% assign selected_posters = site.data.publications.poster_presentations | where: "selected", "y" %}
   {% for paper in selected_posters %}
     <div class="paper-compact">
