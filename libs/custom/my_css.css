@@ -80,6 +80,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+#about p {
+  margin-bottom: 1.4rem;
+}
+
 .docs-section h5 {
   font-size: 1.4rem;
   font-weight: 600;
